@@ -13,6 +13,9 @@ import play.mvc.Result;
 
 import javax.inject.Inject;
 
+/**
+ * TODO: make all requests async
+ */
 public class VacancyController extends Controller {
 
     private static final Logger.ALogger logger = Logger.of(VacancyController.class);

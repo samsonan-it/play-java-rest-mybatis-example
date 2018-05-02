@@ -1,5 +1,7 @@
 package model;
 
+import com.google.common.base.Objects;
+
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -81,5 +83,22 @@ public class Vacancy {
                 ", experience='" + experience + '\'' +
                 ", city='" + city + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Vacancy vacancy = (Vacancy) o;
+        return Objects.equal(id, vacancy.id) &&
+                Objects.equal(name, vacancy.name) &&
+                Objects.equal(salary, vacancy.salary) &&
+                Objects.equal(experience, vacancy.experience) &&
+                Objects.equal(city, vacancy.city);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(id, name, salary, experience, city);
     }
 }

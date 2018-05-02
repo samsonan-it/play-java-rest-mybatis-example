@@ -20,7 +20,7 @@ public interface VacancyDao {
             + "FROM VACANCY WHERE ID = #{id}")
     Vacancy findById(Long id);
 
-    @Update("UPDATE VACANCY SET NAME = #{name}, SALARY = #{salary}, EXPERIENCE = #{experience}, CITY = #{city}) "
+    @Update("UPDATE VACANCY SET NAME = #{name}, SALARY = #{salary}, EXPERIENCE = #{experience}, CITY = #{city} "
             + " WHERE ID = #{id}")
     void update(Vacancy vacancy);
 
