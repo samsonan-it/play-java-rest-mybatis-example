@@ -1,0 +1,40 @@
+@()
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Play REST API</title>
+  </head>
+
+  <body>
+    <h1>Play REST API</h1>
+
+    <p>
+      This is a placeholder page to show you the REST API.
+    </p>
+
+    <p>
+      To see all vacancies, you can do a GET:
+    </p>
+
+
+    <pre>
+      <code>http GET localhost:9000/vacancies</code>
+    </pre>
+
+    <p>
+      To create/update vacancy, do a PUT, with JSON body
+    </p>
+
+    <pre>
+      <code>http PUT localhost:9000/vacancies </code>
+    </pre>
+
+    <pre>
+      <code>{"id":1, "name":"Java Developer"}</code>
+    </pre>
+
+
+  </body>
+</html>

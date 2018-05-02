@@ -1,0 +1,17 @@
+logs
+target
+build
+
+### IntelliJ IDEA ###
+.idea_modules
+.idea
+*.iws
+*.iml
+*.ipr
+
+.classpath
+.gradle
+.project
+.settings
+.g8
+.vscode
