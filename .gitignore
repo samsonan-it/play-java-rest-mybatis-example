@@ -1,6 +1,7 @@
 logs
 target
 build
+out
 
 ### IntelliJ IDEA ###
 .idea_modules

@@ -1,3 +1,6 @@
 
-GET    /                     v1.vacancy.VacancyController.list
-POST   /                     v1.vacancy.VacancyController.create
+GET    /                     controllers.VacancyController.list
+PUT    /                     controllers.VacancyController.create
+
+GET    /:id                  controllers.VacancyController.show(id: Long)
+DELETE /:id                  controllers.VacancyController.delete(id: Long)
